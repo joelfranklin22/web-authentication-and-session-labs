@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="images/x-icon" href="heart.png />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap"
+      rel="stylesheet"
+    />
+    <title>VALENTINE'S DAY</title>
+    <style>
+      .bg-image {
+        position: relative;
+        margin-left: 400px;
+        max-width: 700px;
+        min-width: 400px;
+        cursor: pointer;
+      }
+      .Head-content {
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        color: rgb(255, 255, 255);
+        transform: rotate(-10deg);
+        line-height: 0.6;
+      }
+      .content-1 {
+        font-family: "Lovers Quarrel", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 7em;
+        text-shadow: 0px 0px 10px black;
+      }
+      .content-2 {
+        text-indent: 50px;
+        word-spacing: 6px;
+        font-size: 2.2em;
+        font-family: "Protest Revolution", sans-serif;
+        font-weight: 400;
+        letter-spacing: -2px;
+        text-shadow: 0px 0px 10px black;
+      }
+      .spec-image {
+        position: absolute;
+        object-fit: contain;
+        top: 23%;
+        left: 7%;
+      }
+      .section-1 {
+        position: absolute;
+        top: 50%;
+        left: 23%;
+        color: hsl(0, 0%, 100%);
+        font-size: 1.7em;
+        font-family: "Protest Riot", sans-serif;
+        font-weight: bolder;
+        letter-spacing: -2px;
+        z-index: 2;
+      }
+      .section-2 {
+        position: absolute;
+        top: 50%;
+        left: 34%;
+        font-size: 2.5em;
+        color: rgb(255, 255, 255);
+      }
+      .section-3 {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        color: #ffff;
+        font-size: 1.7em;
+        font-family: "Protest Riot", sans-serif;
+        font-weight: bolder;
+        letter-spacing: -2px;
+      }
+      .section-4 {
+        position: absolute;
+        top: 51%;
+        left: 52%;
+        font-size: 2.5em;
+        color: #ffff;
+      }
+      .section-5 {
+        position: absolute;
+        top: 51%;
+        left: 58%;
+        font-size: 2.4em;
+        color: #ffff;
+        letter-spacing: -2px;
+        font-family: "Protest Riot", sans-serif;
+        font-weight: 400;
+      }
+      .section-6 {
+        position: absolute;
+        top: 63%;
+        left: 20%;
+        font-size: 4.3em;
+        color: #ffff;
+        font-family: "Great Vibes", cursive;
+        font-weight: bolder;
+        transform: rotate(-15deg);
+        text-shadow: 0px 0px 14px black;
+      }
+      .section-7 {
+        position: absolute;
+        top: 68%;
+        left: 30%;
+        font-size: 1.8em;
+        color: #ffff;
+        transform: rotate(-15deg);
+        font-family: "Merienda", cursive;
+        font-optical-sizing: auto;
+        text-shadow: 0px 0px 14px black;
+      }
+      .footer-1 {
+        position: absolute;
+        bottom: 10%;
+        left: 4%;
+        color: white;
+        font-size: 1.5em;
+        font-family: "Barriecito", system-ui;
+        font-weight: 400;
+      }
+      .footer-2 {
+        position: absolute;
+        font-size: 10px;
+        bottom: 9%;
+        left: 13%;
+        color: white;
+        font-family: "Nothing You Could Do", cursive;
+        font-weight: 400;
+      }
+      .footer-3 {
+        position: absolute;
+        bottom: 6%;
+        left: 3%;
+        color: white;
+      }
+      .footer-4 {
+        position: absolute;
+        bottom: 7%;
+        left: 8%;
+        color: white;
+        font-family: "Merienda", cursive;
+      }
+      .footer-5 {
+        position: absolute;
+        bottom: 4%;
+        left: 4%;
+        color: white;
+        font-family: "Merienda", cursive;
+      }
+      .qr-image {
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+      }
+      .footer-6 {
+        position: absolute;
+        right: 37%;
+        bottom: 8%;
+        color: white;
+        font-weight: bolder;
+        font-size: 1.2rem;
+        font-family: "Protest Riot", sans-serif;
+      }
+      .footer-7 {
+        position: absolute;
+        right: 13%;
+        bottom: 4%;
+        color: white;
+        font-family: "Electrolize", sans-serif;
+        font-size: 15px;
+      }
+      .circle {
+        position: absolute;
+        border: solid;
+        background-color: #c8003a;
+        height: 68px;
+        width: 84px;
+        top: 500px;
+        left: 4%;
+        border-radius: 40%;
+        border: hidden;
+        box-shadow: 0px 0px 40px #c8003a;
+      }
+      .heart-image-1 {
+        position: absolute;
+        top: 50%;
+        transform: rotate(-20deg);
+        filter: drop-shadow(0px 0px 10px black);
+      }
+      .heart-image-2 {
+        position: absolute;
+        top: 70%;
+        right: 5%;
+        filter: drop-shadow(0px 0px 10px black);
+        transform: rotate(20deg);
+      }
+      .heart-image-3 {
+        position: absolute;
+        top: 60%;
+        left: 29%;
+        animation-name: Heart;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+      .Head-content:active {
+        color: black;
+        text-shadow: 0px 0px 10px black;
+      }
+      @keyframes Heart {
+        0% {
+          display: none;
+          transform: translate(0px, -10px);
+          filter: drop-shadow(0px 0px 10px black);
+        }
+        30% {
+          display: none;
+          transform: translate(0px, -30px);
+          filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
+        }
+        50% {
+          display: none;
+          transform: translate(0px, -50px);
+          filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
+        }
+        70% {
+          display: none;
+          transform: translate(0px, -70px);
+          filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
+        }
+        100% {
+          transform: translate(0px, -100px);
+          filter: drop-shadow(0px 0px 20px rgb(0, 0, 0));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg-image">
+        <div class="back-img">
+          <img src="Valentine image.png" alt="bg-image" width="700px" />
+        </div>
+        <div class="Head-content">
+          <div class="content-1">Valentine's Day</div>
+          <div class="content-2">massive sale</div>
+        </div>
+        <div class="spec-image">
+          <img src="specs.png" alt="" width="590px" height="240px" />
+        </div>
+        <div class="section">
+          <div class="circle"></div>
+          <div class="heart-image-1">
+            <img src="red-heart.png" alt="" height="80px" width="140px" />
+          </div>
+          <div class="section-1">HER<br />AGE</div>
+          <div class="section-2">+</div>
+          <div class="section-3">HIM<br />AGE</div>
+          <div class="section-4">=</div>
+          <div class="section-5">Discount</div>
+          <div class="heart-image-3">
+            <img src="red-heart.png" alt="" height="50px" width="90px" />
+          </div>
+          <div class="section-6">Lovely Savings</div>
+          <div class="section-7">best gifts for your lovers</div>
+        </div>
+        <div class="footer-left">
+          <div class="heart-image-2">
+            <img src="red-heart.png" alt="" height="80px" width="140px" />
+          </div>
+          <div class="footer-1">Happy Vision</div>
+          <div class="footer-2">The Eyewear Experts</div>
+          <div class="footer-3">
+            <a href="https://www.facebook.com/valentinesday/"
+              ><img src="fb.png" alt="" width="30px" height="30px"
+            /></a>
+          </div>
+          <marquee
+            behavior="slide"
+            width="200px"
+            scrollamount="10"
+            class="footer-4"
+            >HAPPYVISIONEG</marquee
+          >
+          <div class="footer-5">WWW.HAPPYVISION-EG.COM</div>
+        </div>
+        <div class="footer-right">
+          <div class="qr-image">
+            <img src="qr.png" alt="" width="80px" height="80px" />
+          </div>
+          <div class="footer-6">Our Branches</div>
+          <div class="footer-7">
+            Heliopolis -Dokki -Cairo Festival City <br />
+            Zamalek -Mall of Arabia -Dandy Mega Mall
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

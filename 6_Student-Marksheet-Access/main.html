@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylingform.css ">
+    <script>
+      var result = "";
+      function makeid() {
+        const characters =
+          "AB!CD#EFG@HIJKLM|NO$PQRSTU^%WXYZa&b*cdefgh(ijklmno)pqrs+t[uv]wxyz0.1,2/34;56789";
+        const charactersLength = characters.length;
+        let counter = 0;
+        while (counter < 6) {
+          result += characters.charAt(
+            Math.floor(Math.random() * charactersLength)
+          );
+          counter += 1;
+        }
+        document.getElementById("captcha-text").innerHTML = result;
+      }
+      function logic(ans) {
+        var a = document.getElementById("reg").value;
+        var b = document.getElementById("dob").value;
+        var c = document.getElementById("captcha").value;
+        var reg = /^[\d]{12,20}$/gm;
+        if (a.match(reg)) {
+        } else alert("Invalid Register No");
+        if (c.includes(result)) {
+        } else alert("Invalid Captcha Try Again");
+      }
+    </script>
+  </head>
+  <body onload="makeid()">
+    <div class="container">
+      <div class="img-1"><img src="Backgrd-img.png" alt="Backgrd-img" /></div>
+      <div class="form">
+        <h1>Student Login</h1>
+        <form
+          action="http://localhost:8080/DataBase_Mark_/Connector"
+          method="post"
+        >
+          <input
+            type="text"
+            name="reg"
+            id="reg"
+            placeholder="Register Number"
+            required
+          />
+          <input
+            type="text"
+            name="dob"
+            id="dob"
+            placeholder="DD-MM-YYYY"
+            required
+          />
+          <input type="text" id="captcha" placeholder="Enter above captcha" />
+          <button class="reset" onclick="makeid()">
+            <img
+              src="refresh-removebg-preview.png"
+              alt=""
+              width="20px"
+              height="20px"
+              class="refresh"
+            />
+          </button>
+          <input type="submit" value="SUBMIT" id="submit" onclick="logic()" />
+        </form>
+        <div class="img-2">
+          <img src="captcha-bg.png" alt="" />
+        </div>
+        <p id="captcha-text"></p>
+      </div>
+    </div>
+  </body>
+</html>

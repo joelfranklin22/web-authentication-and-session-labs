@@ -1,0 +1,106 @@
+.img-1 img{
+    width: 100%;
+    height: 97.5vh;
+    position: relative;
+}
+h1{
+position: absolute;
+top: 0%;
+left: 10%;
+font-family: "Playfair Display", serif;
+font-style: normal;
+font-size: 3.4rem;
+color: white;
+}
+.form{
+position: absolute;
+border: 1px solid ;
+border: none;
+height: 600px;
+width: 450px;
+top: 10%;
+left: 34%;
+background-color: transparent;
+}
+#reg{
+position: absolute;
+top: 25%;
+left: 17%;
+padding: 12px 0px;
+font-size: 1.5rem;
+font-optical-sizing: auto;
+font-style: normal;
+border-radius: 10px;
+color: #370f60;
+}
+#dob{
+position: absolute;
+top: 40%;
+left: 17%;
+padding: 12px 0px;
+border-radius: 10px;
+font-size: 1.5rem;
+font-optical-sizing: auto;
+font-style: normal;
+color: #370f60;
+
+}
+input[type="text"] {
+text-align:center;
+}
+.img-2 img{
+position: absolute;
+width: 293px;
+height: 55px;
+bottom: 37%;
+left: 17%;
+border-radius: 10px;
+}
+p{
+position: absolute;
+bottom: 35%;
+left: 32%;
+font-size: 25px;
+filter: blur(1.4px);
+letter-spacing: 10px;
+text-shadow: 0px 0px 5px rgb(130, 123, 123);
+}
+#captcha{
+position: absolute;
+bottom: 23%;
+left: 17%;
+padding: 12px 8px;
+font-size: 1.5rem;
+font-family: "Kode Mono", monospace;
+font-optical-sizing: auto;
+font-style: normal;
+border-radius: 10px;
+}
+#submit{
+    position: absolute;
+    bottom: 8%;
+    left: 35%;
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 5px black);
+    cursor: pointer;
+}
+.reset{
+    position: absolute;
+    top: 56%;
+    right: 8%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input{
+    filter: drop-shadow(0px 0px 5px black);
+}
+#submit:hover{
+    background-color:#370f60;
+    filter: drop-shadow(0px 0px 5px white);
+    box-shadow: 0px 0px 5px white,0px 0px 5px white inset;
+    color: white;
+}

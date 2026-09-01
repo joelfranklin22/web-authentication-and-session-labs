@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container#blur.active {
+        filter: blur(20px);
+        pointer-events: none;
+        user-select: none;
+      }
+      #popup{
+        position: fixed;
+        top:40%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 700px;
+        padding: 30px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+        background-color: white;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      #popup.active{
+        top: 50%;
+        opacity: 1;
+        transition: 0.5s;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="blur">
+      <div class="content">
+        <h2>Lorem, ipsum dolor.</h2>
+        <a href="" onclick="toggle()">Read me</a>
+      </div>
+    </div>
+    <div id="popup">
+      <h2>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem ullam
+        quos nulla consequuntur, dolor reprehenderit eum iste laborum commodi
+        magni quisquam excepturi iusto blanditiis voluptatum dolorem tempore
+        cum, quasi odit consequatur. Omnis facere ipsa est exercitationem vero
+        facilis quidem inventore voluptatem consequatur tempora beatae error
+        vel, temporibus animi incidunt accusantium?
+      </h2>
+    </div>
+    <script>
+      function toggle() {
+        // var blur = document.getElementById("blur");
+        // blur.classList.toggle("active");
+        // var popup = document.getElementById("popup");
+        // popup.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
